@@ -30,14 +30,14 @@ body{
     backface-visibility: hidden;
 }
 
-.front-side{
+.back-side{
     background-size: 100%;
     background-position: center;
     background-image: url('https://montante.com.br/wp-content/uploads/2019/03/curso-basico-de-bonsai-curso-online.png');
     background-repeat: no-repeat;
 }
 
-.back-side{
+.front-side{
     background-color: black;
     transform: rotateY(180deg);
     display: flex;
