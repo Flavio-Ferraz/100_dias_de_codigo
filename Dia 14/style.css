@@ -1,0 +1,50 @@
+/* Estilos gerais */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.container {
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* Tema claro (padrão) */
+body.light-theme {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Tema escuro */
+body.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Estilo do botão */
+.toggle-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.toggle-btn:hover {
+    background-color: #333;
+}
+
+/* Estilo do botão no tema escuro */
+body.dark-theme .toggle-btn {
+    background-color: #fff;
+    color: #000;
+}
+
+body.dark-theme .toggle-btn:hover {
+    background-color: #ddd;
+}
