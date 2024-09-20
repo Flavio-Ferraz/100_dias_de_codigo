@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1d212b;
+}
+
+.img-slider {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    margin: 10px;
+    background-color: #1d212b;
+    overflow: hidden; /* Adicionando overflow para controlar o conteúdo */
+}
+
+.img-slider .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%; /* Adicionado para garantir que o slide ocupe todo o espaço */
+    z-index: 0; /* Mantém os slides no fundo */
+    clip-path: circle(0% at 0 50%);
+    opacity: 0; /* Para ajudar na transição */
+    transition: clip-path 1s, opacity 1s; /* Suaviza a transição */
+}
+
+.img-slider .slide.active {
+    z-index: 1;
+    clip-path: circle(150% at 0 50%);
+    opacity: 1; /* Garante que o slide ativo seja visível */
+}
+
+.img-slider .slide img {
+    width: 100%;
+    height: 100%; /* Ajusta a imagem para ocupar o slide */
+    object-fit: cover; /* Garante que a imagem preencha o slide sem distorção */
+    border-radius: 5px;
+}
+
+.img-slider .slide .info {
+    position: absolute;
+    top: 20px; /* Ajusta a posição do texto */
+    left: 20px; /* Ajusta a posição do texto */
+    padding: 15px 30px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+    color: white;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.img-slider .slide .info h2 {
+    color: white;
+    font-size: 28px; /* Reduzi o tamanho da fonte */
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.img-slider .slide .info p {
+    color: white;
+    font-size: 16px;
+    margin-top: 10px;
+    width: 60%;
+    padding: 10px;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.5); 
+}
+
+.img-slider .navigation {
+    z-index: 3;
+    position: absolute;
+    display: flex;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.img-slider .navigation .btn {
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo semitransparente */
+    width: 15px;
+    height: 15px; /* Definindo altura e largura dos botões */
+    margin: 0 5px; /* Espaçamento entre os botões */
+    border-radius: 50%; /* Forma circular */
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.img-slider .navigation .btn.active {
+    background: #2696e9;
+}
+
+.img-slider .navigation .btn:hover {
+    background: #2696e9;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Adicionando efeito ao passar o mouse */
+}
