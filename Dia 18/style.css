@@ -13,12 +13,18 @@
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
   }
-  
+
+  .title{
+    height: 32px;
+    width: auto;
+    color: #333;
+  } 
   .game-board {
     display: grid;
     grid-template-columns: repeat(3, 100px);
     grid-template-rows: repeat(3, 100px);
     gap: 5px;
+    padding-top: 24px;
   }
   
   .cell {
