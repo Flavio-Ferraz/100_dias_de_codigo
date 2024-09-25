@@ -1,0 +1,1 @@
+# Apenas registrando a atividade do dia 21.
