@@ -1,0 +1,1 @@
+# Registro de atividade do dia 23 - commit & push
