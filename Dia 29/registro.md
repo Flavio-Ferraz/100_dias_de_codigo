@@ -1,0 +1,2 @@
+# Hospedagem de projeto no GitHub
+# Vimos como utilizar a Vercel para hospedagem de projetos, de forma a gerar um link que ficará disponível nas descrições dos repositórios do GitHub, de forma a dinamizar o acesso ao projeto por pessoas que visitam nosso GitHub.
