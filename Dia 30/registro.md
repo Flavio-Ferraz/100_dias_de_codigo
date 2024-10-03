@@ -1,0 +1,1 @@
+# Integração entre git, github e vscode - conteúdo mostrado ensina como fazer add, commit e push pelo vscode, sem a necessidade de linhas de comando no prompt. Também demonstrou como clonar repositório pelo git dash. Demonstrou a criação de novas branch com git checkout.
