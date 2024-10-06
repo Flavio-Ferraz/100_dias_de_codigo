@@ -1,0 +1,1 @@
+# Hoje criamos o primeiro componente no React. MAs o meu não funcionou. Preciso depurar meu código para ver onde está a falha.
